@@ -1,0 +1,66 @@
+{
+  "name": "Research Paper Implementation Project Bot",
+  "projectId": "87b43d2b-8e6d-4912-9406-1f54817f1cbb",
+  "description": "User Input:\n\nThe user provides a summary of their research (in .txt or .docx format).\n\nUiPath extracts keywords and generates relevant search phrases based on the summary.\n\nUser Action:\n\nThe user manually searches Google Scholar with the provided phrases and downloads the relevant papers into a specific folder.\n\nPaper Extraction & Analysis:\n\nOnce the papers are downloaded, UiPath will extract and analyze information from each paper.\n\nThis will include extracting metadata (title, authors, abstrac",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.DocumentUnderstanding.ML.Activities": "[1.33.0-preview]",
+    "UiPath.IntelligentOCR.Activities": "[6.24.0-preview]",
+    "UiPath.OCR.Activities": "[3.22.0-preview]",
+    "UiPath.PDF.Activities": "[3.22.1-preview]",
+    "UiPath.Python.Activities": "[1.9.0]",
+    "UiPath.System.Activities": "[25.2.3]",
+    "UiPath.UIAutomation.Activities": "[25.2.1-preview]",
+    "UiPath.WebAPI.Activities": "[1.21.1]",
+    "UiPath.Word.Activities": "[1.20.3]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.161.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "7c7cc3cb-985d-4db0-81cb-fe93207a1012",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

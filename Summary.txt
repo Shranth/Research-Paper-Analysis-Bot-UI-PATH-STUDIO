@@ -1,0 +1,21 @@
+Title: AI-Driven Medical Diagnosis: Comparing CNN and Transformer Models
+Brief Research Outline:
+Objective: Analyze the effectiveness of CNNs vs. Transformer models in diagnosing diseases from medical images.
+
+Data: Use public datasets (e.g., Chest X-rays, Diabetic Retinopathy images).
+
+Methodology:
+
+Train CNN (ResNet, EfficientNet) and Transformer (ViT, Swin) models.
+
+Compare performance using accuracy, precision, recall, and AUC-ROC.
+
+Challenges Addressed:
+
+Handling noisy/low-quality medical images.
+
+Ensuring AI interpretability for medical professionals.
+
+Expected Outcome: Identify the best AI model for real-world medical diagnosis.
+
+Future Scope: Integration into healthcare systems, bias reduction, and federated learning for privacy.

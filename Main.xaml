@@ -1,0 +1,525 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1452.0000000000002,6681.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="584,6658.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="researchSummary" />
+        <Variable x:TypeArguments="s:String[]" Name="keyPhrases" />
+        <Variable x:TypeArguments="s:String[]" Name="searchPhrases" />
+        <Variable x:TypeArguments="x:String" Name="phrase" />
+        <Variable x:TypeArguments="s:String[]" Name="stopWords" />
+        <Variable x:TypeArguments="s:String[]" Name="wordList" />
+        <Variable x:TypeArguments="s:String[]" Name="filteredWords" />
+        <Variable x:TypeArguments="s:String[]" Name="filteredKeywords" />
+        <Variable x:TypeArguments="s:String[]" Name="finalPhrases" />
+        <Variable x:TypeArguments="x:String" Name="researchFolderPath" />
+        <Variable x:TypeArguments="s:String[]" Name="researchFiles" />
+        <Variable x:TypeArguments="s:String[]" Name="dataFolder" />
+        <Variable x:TypeArguments="x:String" Name="dataFolderPath" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadTextFile File="{x:Null}" Content="[researchSummary]" DisplayName="Read Text File" FileName="Summary.txt" sap:VirtualizedContainerService.HintSize="550.4,112.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Grok" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="550.4,2400" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="3913c4e8-373a-4129-88a7-d721181d981c" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,2151.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="pharasesToSearch" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3913c4e8-373a-4129-88a7-d721181d981c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="grok.com" CVScreenId="5706fce8-9351-4511-8cdb-e5e4e0e3fcda" ContentHash="l1DaFD-gvUmTsZiYfnR1aQ" CvElementArea="388, 645, 57, 57" CvTextArea="405, 657, 22, 28" CvType="Icon" DesignTimeRectangle="391, 645, 54, 54" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Attach' tag='BUTTON' type='button' class='inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;amp;_svg]:pointer-events-none [&amp;amp;_svg]:shrink-0 [&amp;amp;_svg]:-mx-0.5 h-9 rounded-full py-2 relative px-2 transition-all duration-150 bg-transparent border w-9 aspect-square border-toggle-border hover:border-input-button-border-hover text-secondary hover:text-primary hover:bg-toggle-hover' aaname='' /&gt;" Guid="248d5c19-a798-47b0-acc4-8408be5a4dec" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAYAAADhu0ooAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARpSURBVGhD7ZvnTxRBGIf9K+1gCUbUqB+Mxo7YErshBgvWxC8WQEWChfhVjS2WxAJGRTjuDg44SgIEGPOMzmRvbvfY25kLl1ufZLPLO2Xf383sO2WXRSImLDINlcp/obZMTU2J8fFxMTIyIgYHB0UqlRL9/f0ikUjIg2tspJGHvJQpFU6FTk5OSqeTyaQYGBgQ2WxWTExMSAEzMzNibm5O5+UaG2nkIS9lKEsd1OUSJ0JpjXQ6LVuHawREhbLUQV3UybULrITSEnS/4eHhknQ76qRu7sG9bIgkdHp6WmQyGXmUQqAJ91D3495RKFoovyzBxFWXKgbuyb2jtG5RQkdHR2XAiPqruoB74wO+FENooUTCoaGhnMi5UOADvuBTWEIJpUKCQrmBT2HFziuULsKvV67gW5huXFAoDz3PQzl01yDwDR/nC1CBQnnoiXALGXjCEsbXQKGMWQsxhEQFX/E5CF+hdINChcoVfA7qwr5CmXK5mvGMjo2JN2/fiQdt7fI8Nla6XoLP+O5HnlC6gIuhBIHnGi+Ixcuq8o7G85dkeinAd79HLk8oKwbb1kyl02JNTW2eQO+xdl2tSKcHzKLW4DsaTHKEsgZkeWQD4X5v3UEpZnnVGtHcel/09v2NiJz5e9nK1TJ9/4FDJRm60GCuZ3OEqpW+DV++ftOt9vzFSzNZgl3l6er+biZbo3Y2vOQIZXVvs2iGew/apICa9RvNpBxIJ19be4eZZA0a0OJFC6VvM8Ow5fjJM1LA7r11ZlIOpJPv1JkGM8kJaPHGGi2U5mbfxpYDB49IAZwLETZfVNDifQy1UPp00GBbDGEF+OXzs0UFLd7nVAslUtkOK+Dn7PUbN+XfnAvl87NFBS3eEUQLZUZhG4jAz1kbW1TQ4p0laaFsKLsY0/yctbFFBS1oUmihLHNc4Oesjc0Gr6b4CY1N141NMHI1vNQfOiqdras/nGfb77FxjY00BWVMW1QChxdXE4aLTVeksxs2bdW2hnON0la1ukYkkyl5cI2NNEXtpi3SdqnpqrZFJXDC4GoK+Phpp3SWQ+0mPGzv0DbzIA3YslS2p53PjFqLJ3AK6GpS/62rSzvM2hN4Xo6dOJ0n8sSpszou3L7bou3dDpZugZN6cLFMm52dFbv+rUxWVK8VSU9A+Pz5i2zBjkdP5LWiL5GQi3TK7NlXbx39Cy7TwMXCG3p6foulK1ZJx7fv3CN+/eoxs2hI27Zjl8xLmd7ePjNL0cy78HaxlaK4dfuu7opLlleLy1evi1ev34iRbFZkMkPyuunKNZmm8t1pbjWricS8WyngYnMM6MLe/aFCB3maW+5Zd1kItTkGrrY7FT9+/BSbt27LE6cO0sjjitDbneByAxtoKbZA33/4qIPRh4+fpM1FKyqK2sCG2LySgFi8ZIIwr+LKhTC+BgqFWLwIVsTi1b4iFh9rKGLx+Y0iFh9UKWLxiZwiFh89euGXrejPWE3oUhX9YbJJxX9q7gcC1Eq/4v55oJz5AyuPnPs0XFvjAAAAAElFTkSuQmCC" InformativeScreenshot="11d301e53ee3136dc96b15b61072aa91.png" Reference="9hODuAnvDkSooettKP-uiQ/6hUbz-zG3UykWYIXuUBrGg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Grok' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5706fce8-9351-4511-8cdb-e5e4e0e3fcda" CvElementArea="451, 642, 247, 59" CvType="InputBox" DesignTimeRectangle="455, 645, 197, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='DeepSearch' tag='BUTTON' type='button' class='inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 disabled:opacity-50 disabled:cursor-default [&amp;amp;_svg]:pointer-events-none [&amp;amp;_svg]:shrink-0 [&amp;amp;_svg]:-mx-0.5 text-primary h-9 rounded-full px-3.5 py-2 group/ds-toggle transition-colors duration-100 focus-visible:ring-transparent box-border relative overflow-hidden rounded-r-none pr-3 bg-transparent hover:bg-toggle-hover focus-visible:bg-toggle-hover' aaname='DeepSearch' check:innerText='DeepSearch' /&gt;" Guid="60384975-cdb6-4cf9-a7d3-05bbf38ebbb0" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V4">
+                <uix:NKeyboardShortcuts.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NKeyboardShortcuts.VerifyOptions>
+              </uix:NKeyboardShortcuts>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="HardwareEvents" ScopeIdentifier="3913c4e8-373a-4129-88a7-d721181d981c" Text="C:\Users\Shranth\OneDrive - Shri Vile Parle Kelavani Mandal\SEM 10\ROBOTIC PROCESS AUTOMATION\PROJECT\Research Paper Implementation Project Bot\Summary.txt" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="grok.com" CVScreenId="ca431a3a-d612-4f5e-86a6-ea70fade0eff" ContentHash="XGgdKgsBy0ONzQx-6i8dTw" CvElementArea="281, 562, 411, 37" CvType="InputBox" DesignTimeRectangle="287, 570, 375, 25" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="b3738f84-b316-4014-bb2a-35481c9cb85d" InformativeScreenshot="c9d287aa1c450eeea7e07c4a72a4db3e.png" IsResponsive="True" Reference="9hODuAnvDkSooettKP-uiQ/FV2-8vIk60aAyl2FtMljsw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="ca431a3a-d612-4f5e-86a6-ea70fade0eff" CvTextArea="195, 573, 79, 16" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="196, 569, 79, 25" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" Guid="8c910467-e79a-44ae-9beb-1590b1332b78" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Open'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_29" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3913c4e8-373a-4129-88a7-d721181d981c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="grok.com" CVScreenId="c2acd93b-1b83-48ab-93fd-31290b933a9d" ContentHash="V26Zg9R-4Euuew3VYW02LQ" CvElementArea="708, 605, 133, 40" CvTextArea="750, 618, 46, 19" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="709, 607, 132, 39" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='&amp;amp;Open' /&gt;" Guid="286c9733-6e08-4a30-a391-4589f99c6288" InformativeScreenshot="8505fed5bc11dc6c29c9a4d96c1aeaf3.png" Reference="9hODuAnvDkSooettKP-uiQ/zk_HjX4W9ka-Dj-tCSAkRA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="c2acd93b-1b83-48ab-93fd-31290b933a9d" CvElementArea="857, 605, 133, 40" CvTextArea="897, 616, 52, 18" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="859, 607, 132, 39" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='2' title='Cancel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2' title='Cancel' check:text='Cancel' /&gt;" Guid="d3a75c04-f00f-47d2-8bba-c96928654e69" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'What do you want to kno…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="3913c4e8-373a-4129-88a7-d721181d981c" Text="Give me 10 Different Pharases from this document that i can use to find research papers on google schollar" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="grok.com" CVScreenId="f848296c-3110-47e3-923c-a4b47bd5f667" ContentHash="HdH4wQ-x306UTlq_IPt8IA" CvTextArea="404, 642, 311, 22" CvTextArgument="What do you want to know?" CvType="Text" DesignTimeRectangle="388, 606, 346, 96" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='What do you want to know?' tag='SPAN' type='' class='absolute px-2 @[480px]/input:px-3 py-5 text-secondary pointer-events-none' check:innerText='What do you want to know?' /&gt;" Guid="c85eeab3-05c7-47bb-b789-46c64de4e4e2" InformativeScreenshot="f4682039b22bf6f5565ec8d8d5a5e09c.png" Reference="9hODuAnvDkSooettKP-uiQ/LS7qNgZk90yp0ToG2sVhTg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Grok' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="f848296c-3110-47e3-923c-a4b47bd5f667" CvElementArea="451, 720, 246, 60" CvType="InputBox" DesignTimeRectangle="455, 723, 197, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='DeepSearch' tag='BUTTON' type='button' class='inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 disabled:opacity-50 disabled:cursor-default [&amp;amp;_svg]:pointer-events-none [&amp;amp;_svg]:shrink-0 [&amp;amp;_svg]:-mx-0.5 text-primary h-9 rounded-full px-3.5 py-2 group/ds-toggle transition-colors duration-100 focus-visible:ring-transparent box-border relative overflow-hidden rounded-r-none pr-3 bg-transparent hover:bg-toggle-hover focus-visible:bg-toggle-hover' aaname='DeepSearch' check:innerText='DeepSearch' /&gt;" Guid="97271736-0211-4645-a701-248ae3d4dab4" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_10" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_31" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3913c4e8-373a-4129-88a7-d721181d981c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="grok.com" ContentHash="Hqj58h9H5kCQNclpz5XA9w" DesignTimeRectangle="1509, 735, 30, 30" DesignTimeScaleFactor="1.5" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='stroke-[2] relative' aaname='' /&gt;" Guid="8527ab4b-1d5e-45dd-af35-061c7837cc47" InformativeScreenshot="f71c254a1d63802183d447c8582d795b.png" Reference="9hODuAnvDkSooettKP-uiQ/daEobO5Cp0S0EXJib6E6-Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Grok' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="f848296c-3110-47e3-923c-a4b47bd5f667" CvElementArea="702, 720, 141, 59" CvTextArea="761, 738, 58, 21" CvTextArgument="Think" CvType="Button" DesignTimeRectangle="705, 723, 135, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Think' tag='BUTTON' type='button' class='inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;amp;_svg]:pointer-events-none [&amp;amp;_svg]:shrink-0 [&amp;amp;_svg]:-mx-0.5 text-primary h-9 rounded-full px-3.5 py-2 group/think-toggle transition-colors duration-100 relative overflow-hidden border bg-transparent border-toggle-border hover:border-input-button-border-hover hover:bg-toggle-hover' aaname='Think' check:innerText='Think' /&gt;" Guid="a675e111-e7fa-4575-8610-c4a846164d47" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_11" />
+              <uix:NGetText DisplayName="Get Text 'Here are 10 distinct ph…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="3913c4e8-373a-4129-88a7-d721181d981c" TextString="[pharasesToSearch]" Version="V4">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="grok.com/chat/cc549232-f851-44ad-bf0b-e4c2f1d9cfa1" ContentHash="sVO8OGvbE0ebAWzq_d2VJQ" DesignTimeRectangle="395, 623, 1152, 708" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;webctrl type='' class='relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-start' tag='DIV' aaname='' /&gt;" Guid="d98ad035-e90d-4bf2-a1c4-96a4758ad807" InformativeScreenshot="f04defec14b1d321965598be3c8d2f48.png" Reference="9hODuAnvDkSooettKP-uiQ/ulDNelKC0E6WyVunStlQpQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AI in Medical Imaging Research - Grok' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="Generated_Research_Phrases.txt" sap:VirtualizedContainerService.HintSize="416,159.2" sap2010:WorkflowViewState.IdRef="WriteTextFile_8" Text="[pharasesToSearch]" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="bBKiUMMyJ0etho6-BhT5Cw" IconBase64="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" InformativeScreenshot="e702750a281063274166bc74f181e48e.jpg" Reference="9hODuAnvDkSooettKP-uiQ/BWfnTWIYzEmzNtVXyn1KIg" Selector="&lt;html app='chrome.exe' title='Grok' /&gt;" Url="https://grok.com/" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="Research Papers" sap:VirtualizedContainerService.HintSize="550.4,976.8" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+        <ui:ForEachFileX.Body>
+          <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+            <ActivityAction.Argument1>
+              <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+            </ActivityAction.Argument1>
+            <ActivityAction.Argument2>
+              <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+            </ActivityAction.Argument2>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,681.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="pdfText" />
+                <Variable x:TypeArguments="x:Int32" Default="1" Name="count" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Processing file: &quot; &amp; CurrentFile.FullName]" />
+              <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="416,115.2" sap2010:WorkflowViewState.IdRef="ReadPDFText_2" Range="All" Text="[pdfText]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Extracted Text: &quot; + pdfText]" />
+              <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[&quot;Data to GPT\Extracted Text from All Pdfs&quot; &amp; CurrentIndex.ToString() &amp; &quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="416,157.6" sap2010:WorkflowViewState.IdRef="WriteTextFile_6" Text="[pdfText]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachFileX.Body>
+      </ui:ForEachFileX>
+      <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="Data to GPT" sap:VirtualizedContainerService.HintSize="550.4,3085.6" sap2010:WorkflowViewState.IdRef="ForEachFileX_2" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+        <ui:ForEachFileX.Body>
+          <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+            <ActivityAction.Argument1>
+              <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+            </ActivityAction.Argument1>
+            <ActivityAction.Argument2>
+              <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+            </ActivityAction.Argument2>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="516.8,2799.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome ChatGPT" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.2,2739.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="708700f8-4bc3-43af-8195-913438b89f14" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,2499.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="aiResponce" />
+                        <Variable x:TypeArguments="x:Int32" Default="1" Name="count1" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="708700f8-4bc3-43af-8195-913438b89f14" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="grok.com" CVScreenId="ab3e8a02-03da-4d1c-bedf-8370f41021a9" ContentHash="LYE6Y8n8YEe5nMM5n3eb2A" CvElementArea="388, 645, 57, 57" CvTextArea="405, 657, 22, 28" CvType="Icon" DesignTimeRectangle="391, 645, 54, 54" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Attach' tag='BUTTON' type='button' class='inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;amp;_svg]:pointer-events-none [&amp;amp;_svg]:shrink-0 [&amp;amp;_svg]:-mx-0.5 h-9 rounded-full py-2 relative px-2 transition-all duration-150 bg-transparent border w-9 aspect-square border-toggle-border hover:border-input-button-border-hover text-secondary hover:text-primary hover:bg-toggle-hover' aaname='' /&gt;" Guid="68cd2474-e1ef-4134-921b-c68ba4da207f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAYAAADhu0ooAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARpSURBVGhD7ZvnTxRBGIf9K+1gCUbUqB+Mxo7YErshBgvWxC8WQEWChfhVjS2WxAJGRTjuDg44SgIEGPOMzmRvbvfY25kLl1ufZLPLO2Xf383sO2WXRSImLDINlcp/obZMTU2J8fFxMTIyIgYHB0UqlRL9/f0ikUjIg2tspJGHvJQpFU6FTk5OSqeTyaQYGBgQ2WxWTExMSAEzMzNibm5O5+UaG2nkIS9lKEsd1OUSJ0JpjXQ6LVuHawREhbLUQV3UybULrITSEnS/4eHhknQ76qRu7sG9bIgkdHp6WmQyGXmUQqAJ91D3495RKFoovyzBxFWXKgbuyb2jtG5RQkdHR2XAiPqruoB74wO+FENooUTCoaGhnMi5UOADvuBTWEIJpUKCQrmBT2HFziuULsKvV67gW5huXFAoDz3PQzl01yDwDR/nC1CBQnnoiXALGXjCEsbXQKGMWQsxhEQFX/E5CF+hdINChcoVfA7qwr5CmXK5mvGMjo2JN2/fiQdt7fI8Nla6XoLP+O5HnlC6gIuhBIHnGi+Ixcuq8o7G85dkeinAd79HLk8oKwbb1kyl02JNTW2eQO+xdl2tSKcHzKLW4DsaTHKEsgZkeWQD4X5v3UEpZnnVGtHcel/09v2NiJz5e9nK1TJ9/4FDJRm60GCuZ3OEqpW+DV++ftOt9vzFSzNZgl3l6er+biZbo3Y2vOQIZXVvs2iGew/apICa9RvNpBxIJ19be4eZZA0a0OJFC6VvM8Ow5fjJM1LA7r11ZlIOpJPv1JkGM8kJaPHGGi2U5mbfxpYDB49IAZwLETZfVNDifQy1UPp00GBbDGEF+OXzs0UFLd7nVAslUtkOK+Dn7PUbN+XfnAvl87NFBS3eEUQLZUZhG4jAz1kbW1TQ4p0laaFsKLsY0/yctbFFBS1oUmihLHNc4Oesjc0Gr6b4CY1N141NMHI1vNQfOiqdras/nGfb77FxjY00BWVMW1QChxdXE4aLTVeksxs2bdW2hnON0la1ukYkkyl5cI2NNEXtpi3SdqnpqrZFJXDC4GoK+Phpp3SWQ+0mPGzv0DbzIA3YslS2p53PjFqLJ3AK6GpS/62rSzvM2hN4Xo6dOJ0n8sSpszou3L7bou3dDpZugZN6cLFMm52dFbv+rUxWVK8VSU9A+Pz5i2zBjkdP5LWiL5GQi3TK7NlXbx39Cy7TwMXCG3p6foulK1ZJx7fv3CN+/eoxs2hI27Zjl8xLmd7ePjNL0cy78HaxlaK4dfuu7opLlleLy1evi1ev34iRbFZkMkPyuunKNZmm8t1pbjWricS8WyngYnMM6MLe/aFCB3maW+5Zd1kItTkGrrY7FT9+/BSbt27LE6cO0sjjitDbneByAxtoKbZA33/4qIPRh4+fpM1FKyqK2sCG2LySgFi8ZIIwr+LKhTC+BgqFWLwIVsTi1b4iFh9rKGLx+Y0iFh9UKWLxiZwiFh89euGXrejPWE3oUhX9YbJJxX9q7gcC1Eq/4v55oJz5AyuPnPs0XFvjAAAAAElFTkSuQmCC" InformativeScreenshot="3e56e45874eb3b2962c3d6367b092569.png" Reference="9hODuAnvDkSooettKP-uiQ/YmS40YdWtEOu3VOydCqWYw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Grok' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="ab3e8a02-03da-4d1c-bedf-8370f41021a9" CvElementArea="450, 642, 247, 59" CvType="InputBox" DesignTimeRectangle="455, 645, 197, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='DeepSearch' tag='BUTTON' type='button' class='inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 disabled:opacity-50 disabled:cursor-default [&amp;amp;_svg]:pointer-events-none [&amp;amp;_svg]:shrink-0 [&amp;amp;_svg]:-mx-0.5 text-primary h-9 rounded-full px-3.5 py-2 group/ds-toggle transition-colors duration-100 focus-visible:ring-transparent box-border relative overflow-hidden rounded-r-none pr-3 bg-transparent hover:bg-toggle-hover focus-visible:bg-toggle-hover' aaname='DeepSearch' check:innerText='DeepSearch' /&gt;" Guid="3cfcd6f5-1db1-408c-9063-b4378a2c2a7b" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Upload from computer'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="708700f8-4bc3-43af-8195-913438b89f14" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="grok.com/chat/025ee772-206c-4427-a63a-a709e76ddc96" CVScreenId="e40c2ee4-96d0-47c0-bfdc-8196fe2efcdd" ContentHash="xxVUxXTHRE-j3mBzIOIv4A" CvElementArea="492, 951, 51, 49" CvTextArea="509, 964, 17, 21" CvType="Icon" DesignTimeRectangle="496, 952, 45, 45" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Attach' tag='BUTTON' type='button' class='inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;amp;_svg]:pointer-events-none [&amp;amp;_svg]:shrink-0 [&amp;amp;_svg]:-mx-0.5 text-primary h-9 rounded-full py-2 group/attach-button relative px-2 transition-colors duration-100 bg-transparent border w-9 aspect-square border-border-l2 hover:bg-button-ghost-hover' aaname='' /&gt;" Guid="1b95ed2b-f187-4b73-a2c2-42d747c0cbaf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL3SURBVGhD7ZpZUttAEIY5UUJsLK+AN+CdSuUGobhB4AjkCuQK5Ao+2qQ+VbVot7bRjGwYVx6+As3S0/+sPZLPvpwPXeqc2YQU+S9CM7gYu/F04eaXS3e13Ljl+satt7duvb3L//JMOvmUo7y1EUqUiG/DzE3nl2652rrr1dbNFtcum8xyB88Ho72yPJNOPuUoTz3qY8fa7kKQiMFFlvfoanPjpvOr4F6lHvWxgz3s2jI+dBZBz602t24yXbivFfkhYAd72MW+zW/DWwS9JnPaTpW+wK6sqS6j6yViNJ7lizObzEt5h4B2aI92bV4VrSKy8Syfs8PRpJR3SGiPdmnf5lkaRdATGOoytH1Cu7TfNiK1IjDAkB57BCy0jx9NHVkrgsV1rDXQBn7gj00XKkWwzbFL2PSPBH/qtt+SCA4c9utDbaOh4A9+VR2IJREo5uCx6V0hVrJpseBX1QzZE0EMw24QehLj+OvrH7fb7XLe3v66X0/PvQnCL/yzsdaeCOYcsYyt7AOOivOgxfB/X0Lwz66NPRFElU1bWRPiND0vaffff7iXl9+l9BjwDz91WiGCTMJjW8kHGQWmj81DiIyGzQsFP3VnFyK4qBDn2wo+iKN1vY048m16KPiJv/JciGDVc2GxFXz4+fDoLYJRoxx1bDlf8FPvUoWIruGvxorgmbUgi9mKiJ1eci2Q50IExkMPOCtCFjPTjOe+ReCn3u0KEQRZtrAvxxYB2l8l4q5U0JePEfHu72mNxEmsiZjdSc4JnOdZi7IHYR8ianenmHMCrGPS+4LefvVzCLXnRMyJDeK0HGISN4E+2CTGijnsak/smNgJcBohIGvBIgJiphLUxk4QE8UCU0SmDyOAGHqcdBFQFSR2oTGKhZj7hCAjoteDEDsC0HqfiL3ZaRDDCMia6ONS5HWzg77u2IfA644NJ/G2A5J/7yQk/wYQTuJdLCT/VlxI/vuEkPyXIkHC32S/2WmS/nqqSf47tibpXxRUgYNJ/rbjs/APXoOJgBdAeYIAAAAASUVORK5CYII=" InformativeScreenshot="c83d5681f61ed9cf5aced5c436f34342.png" Reference="9hODuAnvDkSooettKP-uiQ/38uIQ4U4SUaAKJy1LyZavQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AI in Medical Imaging: Research Phrases - Grok' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="e40c2ee4-96d0-47c0-bfdc-8196fe2efcdd" CvElementArea="547, 950, 201, 50" CvType="InputBox" DesignTimeRectangle="549, 952, 161, 45" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='DeepSearch' tag='BUTTON' type='button' class='inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 disabled:opacity-50 disabled:cursor-default [&amp;amp;_svg]:pointer-events-none [&amp;amp;_svg]:shrink-0 [&amp;amp;_svg]:-mx-0.5 text-primary h-9 rounded-full px-3.5 py-2 group/ds-toggle transition-colors duration-100 focus-visible:ring-transparent box-border relative overflow-hidden rounded-r-none pr-3 bg-transparent hover:bg-button-ghost-hover focus-visible:bg-button-ghost-hover' aaname='DeepSearch' check:innerText='DeepSearch' /&gt;" Guid="1b8d5366-0087-4522-802f-00ce1b73629f" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V4">
+                        <uix:NKeyboardShortcuts.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NKeyboardShortcuts.VerifyOptions>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address DD Drive (Dh…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="HardwareEvents" ScopeIdentifier="708700f8-4bc3-43af-8195-913438b89f14" Text="[&quot;C:\Users\Shranth\OneDrive - Shri Vile Parle Kelavani Mandal\SEM 10\ROBOTIC PROCESS AUTOMATION\PROJECT\Research Paper Implementation Project Bot\Data to GPT\Extracted Text from All Pdfs&quot; &amp; CurrentIndex &amp; &quot;.txt&quot;]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="grok.com" CVScreenId="c3293477-49eb-4cc2-9137-50cd6bcfd2b6" ContentHash="7ynA-rmGFUKqRrU6ccIB1A" CvElementArea="282, 562, 409, 37" CvType="InputBox" DesignTimeRectangle="287, 570, 375, 25" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="8c830799-974a-44ec-bd1f-0f9695fd8b96" InformativeScreenshot="2cda88ccb057297cae98788a8ad97877.png" IsResponsive="True" Reference="9hODuAnvDkSooettKP-uiQ/FF82tii1J0-SusZEX_ochA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="c3293477-49eb-4cc2-9137-50cd6bcfd2b6" CvTextArea="195, 573, 79, 17" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="196, 569, 79, 25" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" Guid="88f7a558-7e6d-43d8-b997-2459c5d92773" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Open'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_24" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="708700f8-4bc3-43af-8195-913438b89f14" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="grok.com" CVScreenId="c3293477-49eb-4cc2-9137-50cd6bcfd2b6" ContentHash="2wltNM6XOUOzdA6rgN2cDw" CvElementArea="708, 605, 133, 40" CvTextArea="750, 618, 46, 19" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="709, 607, 132, 39" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='&amp;amp;Open' /&gt;" Guid="5f20c40b-9a41-45e1-a75c-6b3390d79525" InformativeScreenshot="85fb4048d91de9f4d345f009b80c10a9.png" Reference="9hODuAnvDkSooettKP-uiQ/zYzW5LeckEyYslkhqEf0OQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="c3293477-49eb-4cc2-9137-50cd6bcfd2b6" CvElementArea="857, 605, 133, 40" CvTextArea="897, 616, 52, 18" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="859, 607, 132, 39" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='2' title='Cancel' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2' title='Cancel' check:text='Cancel' /&gt;" Guid="29e951f2-f364-4ce9-a845-c4b2d0dbeb37" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'RECT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="708700f8-4bc3-43af-8195-913438b89f14" Text="Extract all valuable information from the file like the authors, inference, pros, cons in one para of 200 words" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="grok.com" CVScreenId="0b25856a-63a2-40f8-8506-62c9d74ae795" ContentHash="G1hyrxYNnE2dVZenLfSefA" CvTextArea="404, 642, 311, 22" CvType="AnyWordGroup" DesignTimeRectangle="388, 606, 346, 96" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='absolute px-2 @[480px]/input:px-3 py-5 text-secondary pointer-events-none' /&gt;" Guid="3c5c3c69-d825-4bd2-87fa-4440c565186c" InformativeScreenshot="c2b1297c050b8840faaa6fe6473ab9d8.png" Reference="9hODuAnvDkSooettKP-uiQ/ftcsfGbzOUWpj_PfmJDtBQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Grok' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="0b25856a-63a2-40f8-8506-62c9d74ae795" CvElementArea="451, 720, 246, 60" CvType="InputBox" DesignTimeRectangle="455, 723, 197, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='DeepSearch' tag='BUTTON' type='button' class='inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 disabled:opacity-50 disabled:cursor-default [&amp;amp;_svg]:pointer-events-none [&amp;amp;_svg]:shrink-0 [&amp;amp;_svg]:-mx-0.5 text-primary h-9 rounded-full px-3.5 py-2 group/ds-toggle transition-colors duration-100 focus-visible:ring-transparent box-border relative overflow-hidden rounded-r-none pr-3 bg-transparent hover:bg-toggle-hover focus-visible:bg-toggle-hover' aaname='DeepSearch' check:innerText='DeepSearch' /&gt;" Guid="2133d56b-f05c-4b54-b3c6-862dc48e26fa" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PATH'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="708700f8-4bc3-43af-8195-913438b89f14" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="grok.com" ContentHash="cWMpoPtdN0SRYh7ZR7ngWg" DesignTimeRectangle="1509, 753, 30, 30" DesignTimeScaleFactor="1.5" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='stroke-[2] relative' aaname='' /&gt;" Guid="33be0d6a-aa61-4be7-8ad3-adc2d7b5dbe6" InformativeScreenshot="34fe0ce24318f04174a7e014fedd0ee3.png" Reference="9hODuAnvDkSooettKP-uiQ/SfSJHPEY8EKa-W0b1XbR5w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Grok' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="f3e02702-25b9-48b0-85e0-90736b4c8b64" CvElementArea="702, 738, 141, 59" CvTextArea="761, 756, 58, 21" CvTextArgument="Think" CvType="Button" DesignTimeRectangle="705, 741, 135, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Think' tag='BUTTON' type='button' class='inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;amp;_svg]:pointer-events-none [&amp;amp;_svg]:shrink-0 [&amp;amp;_svg]:-mx-0.5 text-primary h-9 rounded-full px-3.5 py-2 group/think-toggle transition-colors duration-100 relative overflow-hidden border bg-transparent border-toggle-border hover:border-input-button-border-hover hover:bg-toggle-hover' aaname='Think' check:innerText='Think' /&gt;" Guid="838c1471-22d0-456c-9ae5-f99062e0da51" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <Delay Duration="00:00:20" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_9" />
+                      <uix:NGetText DisplayName="Get Text 'Extract all valuable in…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="708700f8-4bc3-43af-8195-913438b89f14" TextString="[aiResponce]" Version="V4">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="grok.com/chat/8a3cd9bd-d5d8-4487-b2c1-3808008f89aa" ContentHash="0afRvfbr70aLDTLzc8Wlng" DesignTimeRectangle="419, 323, 1104, 714" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='break-words' /&gt;" Guid="aec73289-a808-458c-976e-bdce5d9a74ad" InformativeScreenshot="8ccc0e8afb4eee1397352ca920e8b14d.png" Reference="9hODuAnvDkSooettKP-uiQ/-dzcrJTmu0-COiS_57HS8A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reinforcement Learning in Recommendation Systems - Grok' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[&quot;GPT Extracted Data\Paper&quot; &amp; CurrentIndex &amp; &quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="416,159.2" sap2010:WorkflowViewState.IdRef="WriteTextFile_7" Text="[aiResponce]" />
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="jweYpZ7UQ0KOcSUkAkyhaw" IconBase64="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" InformativeScreenshot="ad2e1f204cad18b60dfc204763f8a4ab.jpg" Reference="9hODuAnvDkSooettKP-uiQ/gcnXGb3nJkC8CPIhuGSsuA" Selector="&lt;html app='chrome.exe' title='Grok' /&gt;" Url="https://grok.com/" Version="V2" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachFileX.Body>
+      </ui:ForEachFileX>
+    </Sequence>
+  </Sequence>
+</Activity>
